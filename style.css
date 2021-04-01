@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1d1d31;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#logo{
+    position: absolute;
+    top: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h1{
+    font-family: "Open Sans";
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 600;
+    margin: 2.5rem 0;
+}
+
+.clock{
+    display: flex;
+    flex-direction: row;
+}
+
+.clock div{
+    margin: 0 3rem;
+}
+
+.clock .hours-container{
+    display: flex;
+    font-family: 'Barlow';
+    font-weight: 600;
+    text-align: center;
+    background-color: #2295F5;
+    font-size: 3rem;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    width: 125px;
+    height: 125px;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(255, 255, 255, 0.2));
+}
+
+.clock .hours-container #hours{
+    padding: 1rem 0;
+}
+
+.clock .hours-container #hours-text{
+    font-size: 1.25rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    letter-spacing: 0.25rem;
+    background-color: #157BD3;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.clock .minutes-container{
+    display: flex;
+    font-family: 'Barlow';
+    font-weight: 600;
+    text-align: center;
+    background-color: #2ada79;
+    font-size: 3rem;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    width: 125px;
+    height: 125px;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(255, 255, 255, 0.2));
+}
+
+.clock .minutes-container #minutes{
+    padding: 1rem 0;
+}
+
+.clock .minutes-container #minutes-text{
+    font-size: 1.25rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    letter-spacing: 0.25rem;
+    background-color: #15b45c;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.clock .seconds-container{
+    display: flex;
+    font-family: 'Barlow';
+    font-weight: 600;
+    text-align: center;
+    background-color: #ee316a;
+    font-size: 3rem;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    width: 125px;
+    height: 125px;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(255, 255, 255, 0.2));
+}
+
+.clock .seconds-container #seconds{
+    padding: 1rem 0;
+}
+
+.clock .seconds-container #seconds-text{
+    font-size: 1.25rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    letter-spacing: 0.25rem;
+    background-color: #cf154d;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+}
+.clock .minutes-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.clock .seconds-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.clock .am-pm-container{
+    display: flex;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(255, 255, 255, 0.2));
+    align-items: flex-end;
+}
+
+.clock span#am-pm{
+    background-color: rgb(255, 239, 239);
+    font-size: 3rem;
+    
+    padding: 5px 20px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: black;
+}
